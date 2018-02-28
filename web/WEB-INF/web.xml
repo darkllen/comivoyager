@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+    <servlet>
+        <servlet-name>ServletMain</servlet-name>
+        <servlet-class>servlet.ServletMain</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletMain</servlet-name>
+        <url-pattern>/doPost</url-pattern>
+        <url-pattern>/index</url-pattern>
+        <url-pattern>/index1</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ServletRedirect</servlet-name>
+        <servlet-class>servlet.ServletRedirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRedirect</servlet-name>
+        <url-pattern>/new</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletRegistration</servlet-name>
+        <servlet-class>servlet.ServletRegistration</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletRegistration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>servlet.ServletLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/LogIn</url-pattern>
+
+    </servlet-mapping>
+
+
+</web-app>
